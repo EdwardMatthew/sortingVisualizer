@@ -9,7 +9,8 @@ dimensions = (1024, 512)
 # list all of the different sorting algorithms
 algorithms = {"BubbleSort": sa.BubbleSort(), \
               "InsertionSort": sa.InsertionSort(), \
-              "QuickSort": sa.QuickSort()}
+              "QuickSort": sa.QuickSort(), \
+              "SelectionSort": sa.SelectionSort()}
 
 if len(sys.argv) > 1:
     if sys.argv[1] == "list":

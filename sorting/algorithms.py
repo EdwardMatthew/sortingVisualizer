@@ -66,3 +66,16 @@ class QuickSort(Algorithm):
                     arr[i], arr[j] = arr[j], arr[i]
                     self.update_display(arr[i], arr[j])
         return i
+
+class SelectionSort(Algorithm):
+    def __init__(self):
+        super().__init__("SelectionSort")
+    
+    def algorithm(self):
+        for i in range(len(self.array)-1):
+            min = i
+            for j in range(i+1, len(self.array)):
+                if self.array[j] < self.array[min]: 
+                    min = j
+            self.array[i], self.array[min] = self.array[min], self.array[i] 
+            self.update_display(self.array[i], self.array[j])     
